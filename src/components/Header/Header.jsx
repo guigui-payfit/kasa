@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import styles from "./Header.module.scss";
 
 export default function Header() {
@@ -9,12 +11,24 @@ export default function Header() {
         </a>
         <ul>
           <li>
-            <a className={styles.active} href="/home">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? styles.active : undefined
+              }
+              to="/"
+            >
               Accueil
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/about">A propos</a>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? styles.active : undefined
+              }
+              to="/about"
+            >
+              A propos
+            </NavLink>
           </li>
         </ul>
       </nav>
