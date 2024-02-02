@@ -1,0 +1,18 @@
+@use "../../assets/styles/media-queries" as media-query;
+
+footer {
+  img {
+    margin-bottom: 4rem;
+    @include media-query.xs {
+      margin-bottom: 1rem;
+    }
+  }
+  .copyrightContainer {
+    @include media-query.xs {
+      max-width: 12.2rem;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

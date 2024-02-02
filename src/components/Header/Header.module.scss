@@ -1,0 +1,32 @@
+@use "../../assets/styles/media-queries" as media-query;
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  a {
+    img {
+      @include media-query.sm-lt {
+        width: 14.5rem;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    gap: 5.7rem;
+    @include media-query.xs {
+      gap: 2.6rem;
+    }
+    li {
+      a {
+        font-size: 2.4rem;
+        @include media-query.xs {
+          font-size: 1.2rem;
+        }
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

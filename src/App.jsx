@@ -1,7 +1,15 @@
-import "./App.module.scss";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Homepage from "./pages/Home-page/Home-page";
 
-function App() {
-  return <></>;
+export default function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Homepage />
+      </main>
+      <Footer />
+    </>
+  );
 }
-
-export default App;

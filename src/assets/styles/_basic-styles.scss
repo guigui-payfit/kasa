@@ -1,0 +1,69 @@
+@import "media-queries";
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+  @include xs {
+    font-size: 1.2rem;
+  }
+}
+
+a {
+  color: black;
+  font-weight: 500;
+  max-height: 6.8rem;
+  text-decoration: none;
+}
+
+footer {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.4rem;
+  font-weight: 500;
+  height: 20.9rem;
+  justify-content: center;
+  width: 100%;
+}
+
+header,
+main {
+  max-width: 124rem;
+  padding: 0 10rem 0 10rem;
+  width: 100%;
+  @include sm-lt {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+header {
+  padding-top: 4.5rem;
+  @include sm-lt {
+    padding-top: 2rem;
+  }
+}
+
+html {
+  font-size: 62.5%; // 62.5% x 16px === 10px, thus 1rem === 10px
+}
+
+main {
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+#root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  min-height: 100vh;
+}
