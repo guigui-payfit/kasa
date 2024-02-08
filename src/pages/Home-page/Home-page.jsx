@@ -1,5 +1,13 @@
+import Banner from "../../components/Banner/Banner";
+import HomePageBannerBackgroundImage from "../../assets/images/home-page-banner-background.jpg";
 import "./Home-page.module.scss";
 
 export default function HomePage() {
-  return <p>I am "HomePage".</p>;
+  return (
+    <Banner
+      backgroundImageOpacity={0.6}
+      imageUrl={HomePageBannerBackgroundImage}
+      text="Chez vous, partout et ailleurs"
+    />
+  );
 }
