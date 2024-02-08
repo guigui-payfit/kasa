@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-
+import { useMediaQuery } from "../../hooks/use-media-query";
 import styles from "./Banner.module.scss";
 
 const SMALL_OR_LOWER_SCREEN_MEDIA_QUERY = "(max-width: 768px)";
@@ -16,17 +15,7 @@ export default function Banner({
   imageUrl,
   text = "",
 }) {
-  const [isSmallOrLowerScreen, setIsSmallOrLowerScreen] = useState(
-    window.matchMedia(SMALL_OR_LOWER_SCREEN_MEDIA_QUERY).matches
-  );
-
-  useEffect(() => {
-    window
-      .matchMedia(SMALL_OR_LOWER_SCREEN_MEDIA_QUERY)
-      .addEventListener("change", (event) =>
-        setIsSmallOrLowerScreen(event.matches)
-      );
-  }, []);
+  const isSmallOrLowerScreen = useMediaQuery(SMALL_OR_LOWER_SCREEN_MEDIA_QUERY);
 
   const style = {
     backgroundColor: `rgba(0, 0, 0, ${backgroundImageOpacity})`,
