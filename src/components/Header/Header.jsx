@@ -1,8 +1,16 @@
 import { NavLink } from "react-router-dom";
 
+import { useMediaQuery } from "../../hooks/use-media-query";
 import styles from "./Header.module.scss";
 
+const EXTRA_SMALL_SCREEN_MEDIA_QUERY = "(max-width: 480px)";
+
+/**
+ * @returns {React.JSX.Element} header component
+ */
 export default function Header() {
+  const isExtraSmallScreen = useMediaQuery(EXTRA_SMALL_SCREEN_MEDIA_QUERY);
+
   return (
     <header>
       <nav aria-label="main navigation">
@@ -17,7 +25,7 @@ export default function Header() {
               }
               to="/"
             >
-              Accueil
+              {isExtraSmallScreen ? "ACCUEIL" : "Accueil"}
             </NavLink>
           </li>
           <li>
@@ -27,7 +35,7 @@ export default function Header() {
               }
               to="/about"
             >
-              A propos
+              {isExtraSmallScreen ? "A PROPOS" : "A propos"}
             </NavLink>
           </li>
         </ul>
