@@ -23,10 +23,12 @@ nav {
         @include media-query.xs {
           font-size: 1.2rem;
         }
-        &.active {
-          text-decoration: underline;
-        }
       }
     }
   }
+}
+
+a.active {
+  cursor: default;
+  text-decoration: underline;
 }

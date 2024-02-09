@@ -14,9 +14,12 @@ export default function Header() {
   return (
     <header>
       <nav aria-label="main navigation">
-        <a href="/">
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.active : undefined)}
+          to="/"
+        >
           <img alt="Logo de Kasa" src="assets/images/red-and-white-logo.png" />
-        </a>
+        </NavLink>
         <ul>
           <li>
             <NavLink
