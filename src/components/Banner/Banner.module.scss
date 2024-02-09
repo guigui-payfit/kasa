@@ -7,7 +7,6 @@
   background-size: cover;
   border-radius: 2.5rem;
   display: flex;
-  filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.25));
   justify-content: center;
   min-height: 22.3rem;
   @include media-query.sm-lt {

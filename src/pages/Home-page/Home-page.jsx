@@ -12,6 +12,7 @@ export default function HomePage() {
     <div className={styles.container}>
       <Banner
         backgroundImageOpacity={0.6}
+        dropShadowFilter="0 0.4rem 0.4rem rgba(0, 0, 0, 0.25)"
         imageUrl={HomePageBannerBackgroundImage}
         text="Chez vous, partout et ailleurs"
       />
