@@ -1,0 +1,24 @@
+@use "../../assets/styles/media-queries" as media-query;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  .cardContainer {
+    background-color: #f6f6f6;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 5rem;
+    @include media-query.sm-lt {
+      background-color: white;
+      flex-direction: column;
+      gap: 2.2rem;
+      padding: 0;
+    }
+    > * {
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../../assets/styles/media-queries" as media-query;
+
+.container {
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  cursor: pointer;
+  min-height: 34rem;
+  min-width: 34rem;
+  position: relative;
+  transition: var(--transition);
+  &:hover {
+    transform: scale(1.05);
+    transition: var(--transition);
+  }
+  @include media-query.sm-lt {
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  @include media-query.xs {
+    min-height: 22rem;
+    min-width: 22rem;
+  }
+  p {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    border-radius: 1rem;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 2rem;
+    position: absolute;
+    width: 100%;
+  }
+}
