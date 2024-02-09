@@ -1,5 +1,8 @@
 import styles from "./Footer.module.scss";
 
+/**
+ * @returns {React.JSX.Element} footer component
+ */
 export default function Footer() {
   return (
     <footer>
