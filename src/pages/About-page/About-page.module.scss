@@ -1,0 +1,25 @@
+@use "../../assets/styles/media-queries" as media-query;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+  @include media-query.xs {
+    gap: 1.9rem;
+  }
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    @include media-query.xs {
+      gap: 2rem;
+    }
+    li {
+      width: 82.5%;
+      @include media-query.sm-lt {
+        width: 100%;
+      }
+    }
+  }
+}
