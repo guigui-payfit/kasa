@@ -1,32 +1,93 @@
 @use "../../assets/styles/media-queries" as media-query;
 
-.titleContainer {
-  background-color: #ff6060;
+section {
   border-radius: 0.5rem;
-  color: white;
   display: flex;
-  justify-content: space-between;
-  font-size: 2.4rem;
-  font-weight: 700;
-  padding: 1rem 2rem 1rem 1.5rem;
-  @include media-query.xs {
-    padding: 1rem;
-  }
-  p {
-    align-items: center;
+  flex-direction: column;
+  .titleContainer {
+    background-color: #ff6060;
+    border-radius: 0.5rem;
+    color: white;
     display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 1.5rem;
     @include media-query.xs {
-      font-size: 1.3rem;
+      padding: 1rem;
+    }
+    p {
+      align-items: center;
+      display: flex;
+      font-size: 2.4rem;
+      font-weight: 700;
+      @include media-query.sm-lt {
+        font-size: 1.8rem;
+      }
+      @include media-query.xs {
+        font-size: 1.3rem;
+      }
+    }
+    svg {
+      cursor: pointer;
+      fill: currentColor;
+      height: 2.75rem;
+      transition: var(--transition);
+      width: 2.75rem;
+      @include media-query.xs {
+        height: 1.85rem;
+        width: 1.85rem;
+      }
+    }
+  }
+  .contentContainer {
+    border-radius: 0 0 0.5rem 0.5rem;
+    overflow: hidden;
+    &.collapsed {
+      &.touched {
+        animation: collapse 0.3s forwards;
+      }
+      p {
+        height: 0;
+      }
+    }
+    &.expanded {
+      animation: expand 0.3s forwards;
+      p {
+        height: 100%;
+      }
+    }
+    p {
+      @include media-query.xs {
+        font-size: 1.2rem;
+      }
     }
   }
 }
 
-svg {
-  fill: currentColor;
-  height: 2.75rem;
-  width: 2.75rem;
-  @include media-query.xs {
-    height: 1.85rem;
-    width: 1.85rem;
+@keyframes collapse {
+  0% {
+    padding: 1.6rem 2rem 2rem 2rem;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    padding: 0 2rem 0 2rem;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes expand {
+  0% {
+    opacity: 0;
+    padding: 0 2rem 0 2rem;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    padding: 1.6rem 2rem 2rem 2rem;
+    transform: translateY(0);
   }
 }
