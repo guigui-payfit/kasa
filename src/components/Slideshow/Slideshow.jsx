@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   EXTRA_SMALL_SCREEN_MEDIA_QUERY,
   useMediaQuery,
@@ -12,26 +14,45 @@ import styles from "./Slideshow.module.scss";
  */
 export default function Slideshow({ imageUrls }) {
   const isExtraSmallScreen = useMediaQuery(EXTRA_SMALL_SCREEN_MEDIA_QUERY);
+  const [shownSlideIndex, setShownSlideIndex] = useState(0);
 
   return (
     <div
       aria-hidden="true"
       className={styles.container}
-      style={{ backgroundImage: `url(${imageUrls[0]})` }}
+      style={{ backgroundImage: `url(${imageUrls[shownSlideIndex]})` }}
     >
       {imageUrls.length > 1 && (
         <>
-          <svg className={styles.squareChevronLeft}>
+          <svg
+            className={styles.squareChevronLeft}
+            onClick={() => {
+              setShownSlideIndex(
+                shownSlideIndex === 0
+                  ? imageUrls.length - 1
+                  : shownSlideIndex - 1
+              );
+            }}
+          >
             <use
               xlinkHref={`${squareChevronRightIcon}#square-chevron-right`}
             ></use>
           </svg>
-          <svg className={styles.squareChevronRight}>
+          <svg
+            className={styles.squareChevronRight}
+            onClick={() => {
+              setShownSlideIndex((shownSlideIndex + 1) % imageUrls.length);
+            }}
+          >
             <use
               xlinkHref={`${squareChevronRightIcon}#square-chevron-right`}
             ></use>
           </svg>
-          {!isExtraSmallScreen && <p>1/{imageUrls.length}</p>}
+          {!isExtraSmallScreen && (
+            <p>
+              {shownSlideIndex + 1}/{imageUrls.length}
+            </p>
+          )}
         </>
       )}
     </div>

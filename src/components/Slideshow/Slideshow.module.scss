@@ -6,6 +6,7 @@
   border-radius: 2.5rem;
   height: 41.5rem;
   position: relative;
+  transition: var(--transition);
   width: 100%;
   @include media-query.sm-lt {
     height: 25.5rem;
