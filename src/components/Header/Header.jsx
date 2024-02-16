@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 
-import { useMediaQuery } from "../../hooks/use-media-query";
+import {
+  EXTRA_SMALL_SCREEN_MEDIA_QUERY,
+  useMediaQuery,
+} from "../../hooks/use-media-query";
 import styles from "./Header.module.scss";
-
-const EXTRA_SMALL_SCREEN_MEDIA_QUERY = "(max-width: 480px)";
 
 /**
  * @returns {React.JSX.Element} header component

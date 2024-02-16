@@ -1,6 +1,14 @@
 @use "../../assets/styles/media-queries" as media-query;
 
-main {
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 13.9rem;
+  justify-content: space-around;
+  @include media-query.sm-lt {
+    gap: 11.3rem;
+  }
   h1 {
     color: var(--primary-color);
     font-size: 28.8rem;

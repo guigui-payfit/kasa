@@ -1,0 +1,48 @@
+@use "../../assets/styles/media-queries" as media-query;
+
+.container {
+  background-blend-mode: darken;
+  background-position: center;
+  border-radius: 2.5rem;
+  height: 41.5rem;
+  position: relative;
+  width: 100%;
+  @include media-query.sm-lt {
+    height: 25.5rem;
+  }
+  svg {
+    cursor: pointer;
+    fill: white;
+    height: 7.9rem;
+    margin: 0 2.466rem;
+    position: absolute;
+    width: 4.7rem;
+    @include media-query.sm-lt {
+      height: 4rem;
+      margin: 0 1.3rem;
+      width: 2.5rem;
+    }
+    @include media-query.xs {
+      height: 1.98rem;
+      margin: 0 0.6165rem;
+      width: 1.167rem;
+    }
+    &.squareChevronLeft {
+      top: 50%;
+      transform: rotate(180deg) translateY(50%);
+    }
+    &.squareChevronRight {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  p {
+    bottom: 0;
+    color: white;
+    font-weight: 500;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-100%);
+  }
+}

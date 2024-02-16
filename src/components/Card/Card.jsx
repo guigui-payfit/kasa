@@ -2,7 +2,7 @@ import styles from "./Card.module.scss";
 
 /**
  * @param {Object} props
- * @param {string} props.imageUrl - url of the background image displayed in the card
+ * @param {string} props.imageUrl - URL of the background image displayed in the card
  * @param {string} props.title - title displayed in the card
  * @returns {React.JSX.Element} card component
  */
