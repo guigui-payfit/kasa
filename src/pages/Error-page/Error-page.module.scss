@@ -1,0 +1,25 @@
+@use "../../assets/styles/media-queries" as media-query;
+
+main {
+  color: var(--primary-color);
+  h1 {
+    font-size: 28.8rem;
+    @include media-query.sm-lt {
+      font-size: 9.6rem;
+    }
+  }
+  h2 {
+    font-size: 3.6rem;
+    font-weight: 500;
+    text-align: center;
+    @include media-query.sm-lt {
+      font-size: 1.8rem;
+    }
+  }
+  a {
+    text-decoration: underline;
+    @include media-query.sm-lt {
+      font-size: 1.4rem;
+    }
+  }
+}

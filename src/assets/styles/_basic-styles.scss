@@ -53,7 +53,15 @@ html {
 }
 
 main {
+  align-items: center;
+  display: flex;
   flex: 1;
+  flex-direction: column;
+  gap: 13.9rem;
+  justify-content: space-around;
+  @include sm-lt {
+    gap: 11.3rem;
+  }
 }
 
 ul {

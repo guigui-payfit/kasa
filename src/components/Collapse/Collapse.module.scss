@@ -5,7 +5,7 @@ section {
   display: flex;
   flex-direction: column;
   .titleContainer {
-    background-color: #ff6060;
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
     display: flex;
