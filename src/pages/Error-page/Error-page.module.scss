@@ -1,14 +1,15 @@
 @use "../../assets/styles/media-queries" as media-query;
 
 main {
-  color: var(--primary-color);
   h1 {
+    color: var(--primary-color);
     font-size: 28.8rem;
     @include media-query.sm-lt {
       font-size: 9.6rem;
     }
   }
   h2 {
+    color: var(--primary-color);
     font-size: 3.6rem;
     font-weight: 500;
     text-align: center;

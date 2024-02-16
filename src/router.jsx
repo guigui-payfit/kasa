@@ -6,6 +6,7 @@ import ErrorPage from "./pages/Error-page/Error-page";
 
 const AboutPage = lazy(() => import("./pages/About-page/About-page"));
 const HomePage = lazy(() => import("./pages/Home-page/Home-page"));
+const PropertyPage = lazy(() => import("./pages/Property-page/Property-page"));
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,11 @@ export const router = createBrowserRouter([
       {
         element: <HomePage />,
         index: true,
+      },
+      {
+        caseSensitive: true,
+        element: <PropertyPage />,
+        path: "/properties/:id",
       },
       {
         element: <AboutPage />,

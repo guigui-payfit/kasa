@@ -18,7 +18,7 @@ export default function Header() {
           className={({ isActive }) => (isActive ? styles.active : undefined)}
           to="/"
         >
-          <img alt="Logo de Kasa" src="assets/images/red-and-white-logo.png" />
+          <img alt="Logo de Kasa" src="/assets/images/red-and-white-logo.png" />
         </NavLink>
         <ul>
           <li>

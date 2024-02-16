@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import data from "../../data/data.json";
@@ -18,7 +20,9 @@ export default function HomePage() {
       />
       <div className={styles.cardContainer}>
         {data.map((data) => (
-          <Card imageUrl={data.cover} key={data.id} title={data.title} />
+          <NavLink key={data.id} to={`/properties/${data.id}`}>
+            <Card imageUrl={data.cover} title={data.title} />
+          </NavLink>
         ))}
       </div>
     </div>
