@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 
 import Collapse from "../../components/Collapse/Collapse";
 import data from "../../data/data.json";
@@ -13,6 +13,10 @@ export default function PropertyPage() {
   const { id } = useParams();
 
   const property = data.find((item) => item.id === id);
+
+  if (property === undefined) {
+    return <Navigate to="/error" />;
+  }
 
   return (
     <div className={styles.container}>
