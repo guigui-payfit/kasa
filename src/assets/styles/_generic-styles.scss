@@ -1,0 +1,22 @@
+@import "media-queries";
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  .tag {
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    min-width: 11.5rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    @include xs {
+      font-size: 1rem;
+      min-width: 8.4rem;
+      padding: 0.2rem 0.4rem;
+    }
+  }
+}

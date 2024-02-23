@@ -1,3 +1,92 @@
+@use "../../assets/styles/media-queries" as media-query;
+
 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   width: 100%;
+  .mainInformation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    @include media-query.md-lt {
+      margin-top: 0.5rem;
+    }
+    @include media-query.xs {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    p {
+      font-weight: 500;
+    }
+    .titleAndLocationContainer {
+      p {
+        margin-bottom: 2rem;
+        @include media-query.xs {
+          font-size: 1.4rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .authorAndRatingContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include media-query.xs {
+        flex-direction: row-reverse;
+      }
+      .authorContainer {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        p {
+          color: var(--primary-color);
+          text-align: right;
+          white-space: pre-wrap;
+          @include media-query.xs {
+            font-size: 1.2rem;
+          }
+        }
+        img {
+          border-radius: 50%;
+          height: 6.4rem;
+          width: 6.4rem;
+          @include media-query.xs {
+            height: 3.2rem;
+            width: 3.2rem;
+          }
+        }
+      }
+      .ratings {
+        display: flex;
+        justify-content: space-between;
+        svg {
+          height: 3.6rem;
+          padding: 0.6rem;
+          width: 3.6rem;
+          @include media-query.xs {
+            height: 1.8rem;
+            padding: 0.25rem;
+            width: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  .additionalInformation {
+    display: flex;
+    gap: 7.6rem;
+    > * {
+      flex: 1;
+      white-space: pre-wrap;
+    }
+    @include media-query.md-lt {
+      gap: 4.5rem;
+    }
+    @include media-query.sm-lt {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
 }

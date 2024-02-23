@@ -15,6 +15,7 @@ export default function Collapse({ content, title }) {
 
   return (
     <section
+      className={styles.container}
       style={isExpanded ? { backgroundColor: "rgba(246, 246, 246, 0.45)" } : {}}
     >
       <div className={styles.titleContainer}>
