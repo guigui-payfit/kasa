@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.26b7edd2.css",
+    "main.js": "/kasa/static/js/main.ac4bef66.js",
+    "static/css/393.8ec463c8.chunk.css": "/kasa/static/css/393.8ec463c8.chunk.css",
+    "static/js/393.1e74620c.chunk.js": "/kasa/static/js/393.1e74620c.chunk.js",
+    "static/css/127.a5f14b48.chunk.css": "/kasa/static/css/127.a5f14b48.chunk.css",
+    "static/js/127.6ff837c5.chunk.js": "/kasa/static/js/127.6ff837c5.chunk.js",
+    "static/css/835.05c64bd1.chunk.css": "/kasa/static/css/835.05c64bd1.chunk.css",
+    "static/js/835.a274012e.chunk.js": "/kasa/static/js/835.a274012e.chunk.js",
+    "static/js/787.55560dbc.chunk.js": "/kasa/static/js/787.55560dbc.chunk.js",
+    "static/js/801.42341469.chunk.js": "/kasa/static/js/801.42341469.chunk.js",
+    "static/media/about-page-banner-background.jpg": "/kasa/static/media/about-page-banner-background.669a2bd8d10c1fcb86e6.jpg",
+    "static/media/home-page-banner-background.jpg": "/kasa/static/media/home-page-banner-background.e8d5876356a8823490bf.jpg",
+    "static/media/star.svg": "/kasa/static/media/star.dcbfff573dd0f94612b79baf7cf7a24b.svg",
+    "index.html": "/kasa/index.html",
+    "static/media/chevron-up.svg": "/kasa/static/media/chevron-up.e09d895ca1ace97bd34c23191de2f886.svg",
+    "static/media/square-chevron-right.svg": "/kasa/static/media/square-chevron-right.579c70734b0c8fb327f41691867954e7.svg",
+    "main.26b7edd2.css.map": "/kasa/static/css/main.26b7edd2.css.map",
+    "main.ac4bef66.js.map": "/kasa/static/js/main.ac4bef66.js.map",
+    "393.8ec463c8.chunk.css.map": "/kasa/static/css/393.8ec463c8.chunk.css.map",
+    "393.1e74620c.chunk.js.map": "/kasa/static/js/393.1e74620c.chunk.js.map",
+    "127.a5f14b48.chunk.css.map": "/kasa/static/css/127.a5f14b48.chunk.css.map",
+    "127.6ff837c5.chunk.js.map": "/kasa/static/js/127.6ff837c5.chunk.js.map",
+    "835.05c64bd1.chunk.css.map": "/kasa/static/css/835.05c64bd1.chunk.css.map",
+    "835.a274012e.chunk.js.map": "/kasa/static/js/835.a274012e.chunk.js.map",
+    "787.55560dbc.chunk.js.map": "/kasa/static/js/787.55560dbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26b7edd2.css",
+    "static/js/main.ac4bef66.js"
+  ]
+}
