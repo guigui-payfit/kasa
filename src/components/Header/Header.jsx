@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 
+import redAndWhiteLogo from "../../assets/images/red-and-white-logo.png";
 import {
   EXTRA_SMALL_SCREEN_MEDIA_QUERY,
   useMediaQuery,
@@ -19,7 +20,7 @@ export default function Header() {
           className={({ isActive }) => (isActive ? styles.active : undefined)}
           to="/"
         >
-          <img alt="Logo de Kasa" src="/assets/images/red-and-white-logo.png" />
+          <img alt="Logo de Kasa" src={redAndWhiteLogo} />
         </NavLink>
         <ul>
           <li>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import data from "../../data/data.json";
-import HomePageBannerBackgroundImage from "../../assets/images/home-page-banner-background.jpg";
+import homePageBannerBackgroundImage from "../../assets/images/home-page-banner-background.jpg";
 import styles from "./Home-page.module.scss";
 
 /**
@@ -15,7 +15,7 @@ export default function HomePage() {
       <Banner
         backgroundImageOpacity={0.6}
         dropShadowFilter="0 0.4rem 0.4rem rgba(0, 0, 0, 0.25)"
-        imageUrl={HomePageBannerBackgroundImage}
+        imageUrl={homePageBannerBackgroundImage}
         text="Chez vous, partout et ailleurs"
       />
       <div className={styles.cardContainer}>

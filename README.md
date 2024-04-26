@@ -5,19 +5,28 @@ This is the sixth project (P6) of the OpenClassrooms web developer training.
 ## How to start the app
 
 - You need to have Node and npm installed on your machine.
-- Install dependencies by running these commands in your terminal :
+- Install dependencies by running these commands in your terminal:
 
 ```
 npm i
 ```
 
-- Start the app by running this command in your terminal :
+- Start the app by running this command in your terminal:
 
 ```
 npm start
 ```
 
-Once the app is started, you can see Kasa website on your web browser here : http://localhost:3000.
+Once the app is started, you can see Kasa website on your web browser here: http://localhost:3000/kasa.
+
+## Deploy the staging website
+
+You can visit the staging website at the following URL: https://guigui-payfit.github.io/kasa.
+To apply the current code on the staging website, run this command in your terminal:
+
+```
+npm run deploy
+```
 
 ## External links
 

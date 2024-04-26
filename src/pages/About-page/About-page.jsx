@@ -1,4 +1,4 @@
-import AboutPageBannerBackgroundImage from "../../assets/images/about-page-banner-background.jpg";
+import aboutPageBannerBackgroundImage from "../../assets/images/about-page-banner-background.jpg";
 import Banner from "../../components/Banner/Banner";
 import Collapse from "../../components/Collapse/Collapse";
 import styles from "./About-page.module.scss";
@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className={styles.container}>
       <Banner
         backgroundImageOpacity={0.3}
-        imageUrl={AboutPageBannerBackgroundImage}
+        imageUrl={aboutPageBannerBackgroundImage}
       />
       <ul>
         <li>

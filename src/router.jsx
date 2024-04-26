@@ -8,29 +8,32 @@ const AboutPage = lazy(() => import("./pages/About-page/About-page"));
 const HomePage = lazy(() => import("./pages/Home-page/Home-page"));
 const PropertyPage = lazy(() => import("./pages/Property-page/Property-page"));
 
-export const router = createBrowserRouter([
-  {
-    element: <App />,
-    errorElement: <ErrorPage />,
-    path: "/",
-    children: [
-      {
-        element: <HomePage />,
-        index: true,
-      },
-      {
-        caseSensitive: true,
-        element: <PropertyPage />,
-        path: "/properties/:id",
-      },
-      {
-        element: <AboutPage />,
-        path: "/about",
-      },
-    ],
-  },
-  {
-    element: <ErrorPage />,
-    path: "/error",
-  },
-]);
+export const router = createBrowserRouter(
+  [
+    {
+      element: <App />,
+      errorElement: <ErrorPage />,
+      path: "/",
+      children: [
+        {
+          element: <HomePage />,
+          index: true,
+        },
+        {
+          caseSensitive: true,
+          element: <PropertyPage />,
+          path: "/properties/:id",
+        },
+        {
+          element: <AboutPage />,
+          path: "/about",
+        },
+      ],
+    },
+    {
+      element: <ErrorPage />,
+      path: "/error",
+    },
+  ],
+  { basename: "/kasa" }
+);
