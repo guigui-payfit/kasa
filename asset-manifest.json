@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kasa/static/css/main.26b7edd2.css",
-    "main.js": "/kasa/static/js/main.9ec0e109.js",
+    "main.js": "/kasa/static/js/main.338c28ab.js",
     "static/css/393.8ec463c8.chunk.css": "/kasa/static/css/393.8ec463c8.chunk.css",
     "static/js/393.1e74620c.chunk.js": "/kasa/static/js/393.1e74620c.chunk.js",
     "static/css/127.a5f14b48.chunk.css": "/kasa/static/css/127.a5f14b48.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/chevron-up.svg": "/kasa/static/media/chevron-up.e09d895ca1ace97bd34c23191de2f886.svg",
     "static/media/square-chevron-right.svg": "/kasa/static/media/square-chevron-right.579c70734b0c8fb327f41691867954e7.svg",
     "main.26b7edd2.css.map": "/kasa/static/css/main.26b7edd2.css.map",
-    "main.9ec0e109.js.map": "/kasa/static/js/main.9ec0e109.js.map",
+    "main.338c28ab.js.map": "/kasa/static/js/main.338c28ab.js.map",
     "393.8ec463c8.chunk.css.map": "/kasa/static/css/393.8ec463c8.chunk.css.map",
     "393.1e74620c.chunk.js.map": "/kasa/static/js/393.1e74620c.chunk.js.map",
     "127.a5f14b48.chunk.css.map": "/kasa/static/css/127.a5f14b48.chunk.css.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.26b7edd2.css",
-    "static/js/main.9ec0e109.js"
+    "static/js/main.338c28ab.js"
   ]
 }
